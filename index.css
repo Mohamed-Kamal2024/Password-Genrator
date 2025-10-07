@@ -1,0 +1,153 @@
+/* 
+color1:#111827;
+color2:#064E3B;
+color3:#0C4A6E;
+color4:#78350F;
+color5:#881337;
+color6:#4C1D95;
+color7:#4ADF86;
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 620px;
+  height: 598px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+  margin: 50px auto;
+}
+.square {
+  width: 490px;
+  height: 490px;
+  background-color: #1f2937;
+}
+.title {
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 45px;
+  font-weight: 600;
+}
+.subtitle {
+  color: #4adf86;
+  margin-left: 30px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.description {
+  color: #fff;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.btn {
+  background-color: #4adf86;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+
+  margin-left: 5px;
+}
+.btn:hover {
+  background-color: #3bbf6f;
+  color: #881337;
+  transform: translateY(2px); /* Slight downward shift */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+.generate-btn {
+  width: 240px;
+  height: 50px;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+hr {
+  width: 400px;
+  border: none;
+  border-top: 5px solid #0c4a6e;
+  margin-top: 15px;
+  margin-left: 25px;
+  transition: all 0.3s ease;
+}
+hr:hover {
+  border-top: 4px solid #78350f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transform: translateY(2px); /* Slight downward shift */
+}
+.suggestion-1,
+.suggestion-2 {
+  text-align: center;
+  margin-top: 5px;
+}
+.output {
+  color: #4adf86;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+/* .output:hover {
+  color: #4c1d95;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 22px;
+} */
+.password-box-1,
+.password-box-2 {
+  display: inline-block;
+  width: 205px;
+  height: 45px;
+  background-color: #111827;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  user-select: all;
+  margin-top: 10px;
+}
+
+/* chatgpt */
+.tooltip {
+  display: none;
+  width: 205px;
+  height: 25px;
+  background: #222; /* Match password box background */
+  color: #eee; /* Match password box text color */
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  margin: 8px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  min-width: 180px; /* Match password box width if needed */
+  border: 2px solid #00ffae; /* Match password box border if present */
+}

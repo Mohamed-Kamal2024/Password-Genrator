@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Password Genrator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="square">
+        <h1 class="title">Generate a</h1>
+        <h2 class="subtitle">random Password</h2>
+        <p class="description">Never use an insecure password again</p>
+        <button class="generate-btn btn" onclick="generatePassword()">
+          Generate Passwords
+        </button>
+        <hr />
+        <div class="suggestion-1">
+          <h3 class="output">The first suggestion</h3>
+          <div id="password1-el" class="password-box-1">
+            <!-- Password will be displayed here -->
+          </div>
+          <div id="tooltip1" class="tooltip"></div>
+          <button
+            class="copy-btn btn"
+            onclick="copy('password1-el', 'tooltip1')"
+          >
+            Copy
+          </button>
+
+          <button class="clear-btn btn" onclick="clearPassword1()">
+            Clear
+          </button>
+        </div>
+        <hr />
+        <div class="suggestion-2">
+          <h3 class="output">The second suggestion</h3>
+
+          <div id="password2-el" class="password-box-2">
+            <!-- Password will be displayed here -->
+          </div>
+          <div id="tooltip2" class="tooltip"></div>
+          <button
+            class="copy-btn2 btn"
+            onclick="copy('password2-el', 'tooltip2')"
+          >
+            Copy
+          </button>
+          <button class="clear-btn2 btn" onclick="clearPassword2()">
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="darkmode.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
